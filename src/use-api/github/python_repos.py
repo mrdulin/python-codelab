@@ -19,7 +19,8 @@ for repo_dict in repo_dicts:
     names.append(repo_dict['name'])
     plot_dict = {
         'value': repo_dict['stargazers_count'],
-        'label': repo_dict['description']
+        'label': repo_dict['description'] if repo_dict['description'] else 'No description',
+        'xlink': repo_dict['html_url']
     }
     plot_dicts.append(plot_dict)
     # stars.append(repo_dict['stargazers_count'])
@@ -47,5 +48,7 @@ chart = pygal.Bar(my_config, style=my_style)
 chart.title = 'Most-starred Python Projects on GitHub'
 chart.x_labels = names
 chart.add('', plot_dicts)
-chart.render_to_file(os.path.dirname(
-    os.path.realpath(__file__)) + '/python_repos.svg')
+filename = os.path.dirname(
+    os.path.realpath(__file__)) + '/python_repos.svg'
+print('filename: ', filename)
+chart.render_to_file(filename)
