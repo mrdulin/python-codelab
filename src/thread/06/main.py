@@ -11,7 +11,7 @@ class mythread(threading.Thread):
         global x
         lock.acquire()
         x += 10
-        print('%s: %d', self.name, x)
+        print('%s: %d' % (self.name, x))
         lock.release()
 
 
