@@ -14,3 +14,4 @@ Learning Python by examples
 - [Threads, processes and concurrency in Python: some thoughts](https://www.artima.com/weblogs/viewpost.jsp?thread=299551)
 - [Example code for the book Fluent Python](https://github.com/fluentpython/example-code)
 - [Embarrassingly parallel](https://en.wikipedia.org/wiki/Embarrassingly_parallel)
+- [Coroutines and Tasks](https://docs.python.org/3.8/library/asyncio-task.html)
