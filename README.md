@@ -15,3 +15,9 @@ Learning Python by examples
 - [Example code for the book Fluent Python](https://github.com/fluentpython/example-code)
 - [Embarrassingly parallel](https://en.wikipedia.org/wiki/Embarrassingly_parallel)
 - [Coroutines and Tasks](https://docs.python.org/3.8/library/asyncio-task.html)
+- [Developing with asyncio](https://docs.python.org/3/library/asyncio-dev.html)
+- [Fan-in and Fan-out: The crucial components of concurrency](https://www.youtube.com/watch?v=CWmq-jtkemY)
+
+## Resources
+
+- [Vaurien](https://vaurien.readthedocs.io/en/1.8/)
