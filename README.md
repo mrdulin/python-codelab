@@ -17,6 +17,7 @@ Learning Python by examples
 - [Coroutines and Tasks](https://docs.python.org/3.8/library/asyncio-task.html)
 - [Developing with asyncio](https://docs.python.org/3/library/asyncio-dev.html)
 - [Fan-in and Fan-out: The crucial components of concurrency](https://www.youtube.com/watch?v=CWmq-jtkemY)
+- [typing — Support for type hints](https://docs.python.org/3/library/typing.html)
 
 ## Resources
 

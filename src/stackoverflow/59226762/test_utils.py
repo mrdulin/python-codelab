@@ -22,8 +22,10 @@ class TestUtils(unittest.TestCase):
         mycursor.fetchall.side_effect = Exception
         dbconnection.cursor.return_value = mycursor
 
-        with self.assertRaises(Exception):
+        with self.assertRaises(Exception) as cm:
             utils.query_db(dbconnection, 12345)
+        self.assertEqual(str(
+            cm.exception), 'Error while executing query : 12345. Please check the logs for details')
 
 
 if __name__ == '__main__':
