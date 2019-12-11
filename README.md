@@ -18,6 +18,7 @@ Learning Python by examples
 - [Developing with asyncio](https://docs.python.org/3/library/asyncio-dev.html)
 - [Fan-in and Fan-out: The crucial components of concurrency](https://www.youtube.com/watch?v=CWmq-jtkemY)
 - [typing — Support for type hints](https://docs.python.org/3/library/typing.html)
+- [unit testing with asyncio](http://jacobbridges.github.io/post/unit-testing-with-asyncio/)
 
 ## Resources
 
