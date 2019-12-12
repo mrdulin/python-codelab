@@ -11,6 +11,8 @@ class TestMain(unittest.TestCase):
             mock_popen().readlines.return_value = Lines
             lineTag = "undocumented_line:"
             self.assertEqual(change_from(lineTag), [])
+            mock_popen.assert_called_with('ls -al')
+            mock_popen().readlines.assert_called_once()
 
 
 if __name__ == '__main__':
