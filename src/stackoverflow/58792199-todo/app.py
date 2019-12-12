@@ -10,8 +10,3 @@ class Application:
 
     async def func3(self):
         pass
-
-
-app = Application()
-
-print(asyncio.run(app.func1()))
