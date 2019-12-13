@@ -23,3 +23,4 @@ Learning Python by examples
 ## Resources
 
 - [Vaurien](https://vaurien.readthedocs.io/en/1.8/)
+- [Pypy](https://www.pypy.org/)
