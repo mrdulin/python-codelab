@@ -10,6 +10,12 @@ To begin using the virtual environment, it needs to be activated:
 source ./venv/bin/activate
 ```
 
+deactivate virtual environment:
+
+```bash
+deactivate
+```
+
 Run test cases and generate test coverage report:
 
 ```bash
@@ -31,6 +37,34 @@ coverage include pattern:
 
 ```bash
 coverage run /Users/ldu020/workspace/github.com/mrdulin/python-codelab/src/stackoverflow/60680124/test_employee.py && coverage report -m --include="src/*"
+```
+
+List global(system-level) pakcages:
+
+```bash
+☁  python-codelab [master] ⚡  pip3 list
+Package          Version
+---------------- ----------
+certifi          2019.11.28
+pip              19.3.1
+pipenv           2018.11.26
+setuptools       41.6.0
+virtualenv       16.7.8
+virtualenv-clone 0.5.3
+wheel            0.33.6
+```
+
+List virtual environment(project-level) packages:
+
+```bash
+source .venv/bin/activate
+pip3 list
+```
+
+Install packages in virtual environment via `requirements.txt` file:
+
+```bash
+pip3 install -r requirements.txt -i https://mirrors.aliyun.com/pypi/simple/
 ```
 
 ## References
