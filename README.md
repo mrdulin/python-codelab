@@ -2,6 +2,31 @@
 
 Learning Python by examples
 
+## Usage
+
+To begin using the virtual environment, it needs to be activated:
+
+```bash
+source ./venv/bin/activate
+```
+
+Run test cases and generate test coverage report:
+
+```bash
+(venv) ☁  python-codelab [master] ⚡  coverage run /Users/ldu020/workspace/github.com/mrdulin/python-codelab/src/stackoverflow/54841363/test_content_provider.py && coverage report -m
+.
+----------------------------------------------------------------------
+Ran 1 test in 0.001s
+
+OK
+Name                                                  Stmts   Miss  Cover   Missing
+-----------------------------------------------------------------------------------
+src/stackoverflow/54841363/content_provider.py            8      2    75%   3-4
+src/stackoverflow/54841363/test_content_provider.py      11      0   100%
+-----------------------------------------------------------------------------------
+TOTAL                                                    19      2    89%
+```
+
 ## References
 
 - [Proposal for a yield from statement for Python](http://www.cosc.canterbury.ac.nz/greg.ewing/python/yield-from/yield_from.html)
@@ -19,6 +44,7 @@ Learning Python by examples
 - [Fan-in and Fan-out: The crucial components of concurrency](https://www.youtube.com/watch?v=CWmq-jtkemY)
 - [typing — Support for type hints](https://docs.python.org/3/library/typing.html)
 - [unit testing with asyncio](http://jacobbridges.github.io/post/unit-testing-with-asyncio/)
+- [virtualenvs](https://docs.python-guide.org/dev/virtualenvs/)
 
 ## Resources
 
