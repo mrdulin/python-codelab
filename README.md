@@ -27,6 +27,12 @@ src/stackoverflow/54841363/test_content_provider.py      11      0   100%
 TOTAL                                                    19      2    89%
 ```
 
+coverage include pattern:
+
+```bash
+coverage run /Users/ldu020/workspace/github.com/mrdulin/python-codelab/src/stackoverflow/60680124/test_employee.py && coverage report -m --include="src/*"
+```
+
 ## References
 
 - [Proposal for a yield from statement for Python](http://www.cosc.canterbury.ac.nz/greg.ewing/python/yield-from/yield_from.html)
