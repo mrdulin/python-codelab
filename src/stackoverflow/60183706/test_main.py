@@ -11,7 +11,6 @@ class TestMain(unittest.TestCase):
             version = myclass_instace.get_version()
             self.assertEqual(version, '1.0.0')
             m.assert_called_with('file_path')
-            mocked_openfile = mocked_open()
 
 
 if __name__ == '__main__':
