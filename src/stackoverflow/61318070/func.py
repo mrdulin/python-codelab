@@ -4,4 +4,4 @@ def func(db_engine):
     extracted_val = []
     for res in query_result:
         extracted_val.append(res[1])
-    return extracted_va
+    return extracted_val
