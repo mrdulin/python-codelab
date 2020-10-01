@@ -77,6 +77,12 @@ WARNING: Retrying (Retry(total=4, connect=None, read=None, redirect=None, status
 pip3 install Pillow -i https://mirrors.aliyun.com/pypi/simple/ --trusted-host mirrors.aliyun.com/pypi
 ```
 
+Use pytest with coverage report:
+
+```bash
+coverage run -m pytest /Users/ldu020/workspace/github.com/mrdulin/python-codelab/src/stackoverflow/53856568/test_code_53856568.py && coverage report -m --include="src/*"
+```
+
 ## References
 
 - [Proposal for a yield from statement for Python](http://www.cosc.canterbury.ac.nz/greg.ewing/python/yield-from/yield_from.html)
