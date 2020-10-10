@@ -67,6 +67,16 @@ Install packages in virtual environment via `requirements.txt` file:
 pip3 install -r requirements.txt -i https://mirrors.aliyun.com/pypi/simple/
 ```
 
+Install packages ignore certificate issue:
+
+```bash
+WARNING: Retrying (Retry(total=4, connect=None, read=None, redirect=None, status=None)) after connection broken by 'SSLError(SSLCertVerificationError(1, '[SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: self signed certificate in certificate chain (_ssl.c:1076)'))': /simple/pillow/
+```
+
+```bash
+pip3 install Pillow -i https://mirrors.aliyun.com/pypi/simple/ --trusted-host mirrors.aliyun.com/pypi
+```
+
 ## References
 
 - [Proposal for a yield from statement for Python](http://www.cosc.canterbury.ac.nz/greg.ewing/python/yield-from/yield_from.html)
